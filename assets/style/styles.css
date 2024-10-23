@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+ul li{
+    display: inline-block;
+}
+body{
+    min-height: 68rem;
+    display: grid; 
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 8rem 20rem 25rem 25rem 10rem;
+    grid-template-areas: 
+        "logo logo nav nav nav nav nav nav nav nav nav nav"
+        "hero hero hero hero hero hero hero hero hero hero hero hero"
+        "top top top top top top top top top top top top"
+        "all all all all all all all all all all all all"
+        "foot foot foot foot foot foot foot foot foot foot foot foot";
+}
+.logo{
+    grid-area: logo;
+  background-color: rgb(171, 230, 230);
+ color: black;
+}
+nav{
+    grid-area: nav;
+    background-color: rgb(123, 172, 178);
+    color: black;
+}
+#hero-companies{
+    grid-area: hero;
+    background-color: rgb(71, 159, 159);
+    color: black;
+}
+#top-companies{
+    grid-area: top;
+    background-color: rgb(92, 132, 136);
+    color: black;
+}
+#all-companies{
+    grid-area: all;
+    background-color: aqua;
+    color: black;
+}
+footer{
+    grid-area: foot;
+    background-color: rgb(45, 117, 117);
+    color: black;
+}
+
+
+
