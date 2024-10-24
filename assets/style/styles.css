@@ -15,11 +15,11 @@ body{
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: 8rem 20rem 25rem 25rem 10rem;
     grid-template-areas: 
-        "logo logo nav nav nav nav nav nav nav nav nav nav"
-        "hero hero hero hero hero hero hero hero hero hero hero hero"
-        "top top top top top top top top top top top top"
-        "all all all all all all all all all all all all"
-        "foot foot foot foot foot foot foot foot foot foot foot foot";
+        "logo logo nav nav nav nav nav nav nav nav"
+        "hero hero hero hero hero hero hero hero hero hero"
+        "top top top top top top top top top top"
+        "all all all all all all all all all all"
+        "foot foot foot foot foot foot foot foot foot foot";
 }
 .logo{
     grid-area: logo;
@@ -33,14 +33,116 @@ nav{
 }
 #hero-companies{
     grid-area: hero;
-    background-color: rgb(71, 159, 159);
-    color: black;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
+ .hero{ 
+    position: relative;
+    background-color: #FF5757;
+    border-radius: 5px;
+    width: 90%;
+    max-width:65rem;
+    padding: 2rem;
+    text-align: center;
+    
+}
+.title{
+
+display: flex;
+flex-direction: column;
+ color: black;
+ font-style: italic;
+ gap: 0.5rem;
+ font-size: 1.3rem;
+ padding-bottom: 1rem;
+
+
+}
+.items-companies{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.search-inputs {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.search-inputs input {
+    font-style: italic;
+    max-width: 60rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    font-size: 1.2rem;
+}
+.items-companies button:hover{
+    background-color: #f8a5a5;
+}
+
+.items-companies button {
+    width: 80%;
+    padding: 1rem;
+    border-radius:2rem;
+    border: none;
+    font-size: 1.5rem;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+.test{
+    padding-left: 3rem ;
+    padding-right: 3rem;
+ }
+
+/*Top companies*/
+
 #top-companies{
     grid-area: top;
-    background-color: rgb(92, 132, 136);
-    color: black;
+    background-color: black;
+    color:white;
+} 
+#top-companies .cards {
+display: grid;
+grid-template-columns: repeat(auto-fit,minmax(26rem,1fr));
+padding-left: 7rem;
+gap: 15px;
+
 }
+#top-companies .cards .card{
+    border-radius: 5px;
+    background-color: white;
+    /* text-align: left; */
+  padding: 30px 20px;
+    width: 80%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #all-companies{
     grid-area: all;
     background-color: aqua;
@@ -51,6 +153,4 @@ footer{
     background-color: rgb(45, 117, 117);
     color: black;
 }
-
-
 
