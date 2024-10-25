@@ -219,3 +219,80 @@ header {
         align-items: center;
     }
 }
+
+footer {
+    background-color: #000;
+    padding: 40px 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.property {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.property h2 {
+    color: #c00000;
+    font-size: 20px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid green;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.property ul {
+    list-style: none;
+}
+
+.property ul li {
+    margin: 8px 0;
+}
+
+.property ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.property ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact-us h2 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.social-icons {
+    display: flex;
+    list-style: none;
+}
+
+.social-icons li {
+    margin-right: 15px;
+}
+
+.social-icons li a img {
+    width: 25px;
+    height: 25px;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
