@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: rgb(255, 255, 255);
+    background-image: url(/assets/images/back1.avif);
+    background-size: 100%;
 }
 
 header {
@@ -305,6 +306,33 @@ footer {
         grid-template-columns: auto auto;
         gap: 5px;
         width: 790px;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .property {
+        text-align: center;
+        margin: 20px 0;
+    }
+}
+
+@media (max-width: 480px){
+
+    .menu-content{
+        width: 200px;
+        margin-right: 200px;
+    }
+    .menu{
+        width: 480px;
+    }
+    .case-content{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 5px;
+        width: 30px;
     }
 
     .footer-container {
