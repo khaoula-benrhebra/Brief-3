@@ -9,16 +9,41 @@
 </head>
 
 <body>
-    <h2 class="logo">logo</h2>
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>creat cv</li>
-            <li>companies</li>
-            <li>jobs</li>
-            <li>receuteurs</li>
+    <header>
+
+      <div class="logo-nav">     
+
+            <div class="logo">
+                <a href="/index.html">
+                 <img src="/images/image mohamed/logo.png" alt="Logo" />
+                </a>
+            </div>
+            <div  class="auth-buttons">
+                <button class="signup"><a href="#">Sign up</a></button>
+                <button class="login"><a href="#">Log in</a></button>
+            </div>
+        </div>
+        <nav>
+        <ul class="nav-links">
+            <li><a href="/index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                <a href="/pages/job.html">job</a>
+                    <i class="down"></i>
+                    <ul class="dropdown-content">
+                      <li><a href="#link1">Link 1</a></li>
+                      <li><a href="#link2">Link 2</a></li>
+                      <li><a href="#link3">Link 3</a></li>
+                    </ul>
+                </div>
+            </li>
+            <li><a href="/pages/createcv.html">Create cv</a></li>
+            <li><a href="/pages/companies.html">Companies</a></li>
+            <li><a href="/pages/recruiters.html">For job employers</a></li>
         </ul>
     </nav>
+    </header>
+    
     <section id="hero-companies">
         <div class="hero">
             <div class="title">
@@ -187,7 +212,42 @@
 
         </div>
     </section>
-    <footer>Footer</footer>
+    <footer>
+        <footer>
+            <div class="footer-container">
+                <div class="property">
+                    <h2>School & Universities</h2>
+                    <ul>
+                        <li><a href="#">The Center by JobEasy</a></li>
+                        <li><a href="#">Our Partners</a></li>
+                    </ul>
+                </div>
+                <div class="property">
+                    <h2>Companies</h2>
+                    <ul>
+                        <li><a href="#">JobEasy for Companies</a></li>
+                        <li><a href="#">Our Solutions</a></li>
+                    </ul>
+                </div>
+                <div class="property">
+                    <h2>JobEasy</h2>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Press and Media</a></li>
+                        <li><a href="#">Join Us</a></li>
+                    </ul>
+                </div>
+                <div class="contact-us">
+                    <h2>Contact Us</h2>
+                    <ul class="social-icons">
+                        <li><a href="#"><img src="/assets/images/email.png" alt="Mail"></a></li>
+                        <li><a href="#"><img src="/assets/images/x.png" alt="X"></a></li>
+                        <li><a href="#"><img src="/assets/images/fb.png" alt="Facebook"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+    </footer>
 </body>
 
 </html>
