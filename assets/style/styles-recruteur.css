@@ -10,9 +10,10 @@ body{
     --red:red;
     --carts:#f0eaea9a;
     --button-carts:#111111;
+    
 }
 #header{
-    background-image: url('../images/home.jpg');
+    background-image: url('../images/home1.jpg');
     background-size: cover;
     height: 75vh;
 }
@@ -90,6 +91,7 @@ body{
 .ligne {
     height: 2px; 
     background-color: black; 
+    /* margin: 20px 0;  */
 }
 .soulitions{
     display: flex;
@@ -167,14 +169,61 @@ body{
 .nbr-salarie{
     grid-column: 2 span;
 }
+
 .form input{
     width: 400px;
-    height: 46px;
-    border-radius: 7px;
+    height: 40px;
+    border-radius: 10px;
     margin-bottom: 18px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 430px) {
+    .home h1{
+        font-size: 30px;
+    }
+    .home p{
+        font-size: 19px;
+    }
+    .btn{
+        padding: 0.75em 1em;
+    }
+    #container h2 {
+        font-size: 28px;
+        padding-top: 9px;
+        padding-left: 12px;
+    }
+    .p-capty {
+        text-align: left;
+        font-size: 14px;
+        padding-left: 12px;
+        margin-top: 69px;
+        line-height: 26px;
+    }
+    #nos-solutions h4 {
+        font-size: 29px;
+        padding-top: 20px;
+        padding-left: 12px;
+    }
+    #publier h6 {
+        font-size: 29px;
+        padding-left: 14px;
+    }
+    .solut button{
+        top: 160px;
+    }
+    .contet {
+        padding-top: 1px;
+    }
+
+    .carts{
+        gap: 36px;
+    }
+    .cart h3{
+        font-size: 29px;
+    }
     .input-container{
-        grid-template-columns: auto;
+        display: block;
+    }
+    .form input{
+        width: 94%;
     }
 }
