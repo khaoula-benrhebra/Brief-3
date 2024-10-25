@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: cursive;
+    line-height: 1.6;
+    background-color: black;
+    color: #333;
+}
+
+.logo-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vh;
+    background-color: black;
+}
+.auth-buttons{
+   
+    .signup{
+        background-color: rgb(255, 87, 3);
+        padding: 5px;
+        border-radius: 5px;
+        border: none;
+        
+    }
+    .signup a{
+        
+        color: #f9f9f9;
+        text-decoration: none;
+        
+    }
+    .login{
+
+        background-color: black;
+        padding: 5px;
+        text-decoration: none;
+        border-radius: 5px;
+        border: 2px #f9f9f9 solid ;
+    }
+    .login a{
+
+        color: #f9f9f9 ;
+        text-decoration: none;
+    }
+}
+.nav-links {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 1%;
+    background-color: rgba(0, 0, 0, 0.474);
+    padding-bottom: 1%;
+    list-style-type: none;
+    
+   
+}
+.nav-links li a{
+    
+    text-decoration: none;
+    color: rgb(210, 210, 210);
+}
+.nav-links li:hover{ 
+
+    border-bottom: #f9f9f9 solid 3px;
+
+}
+.dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    visibility: hidden;
+    list-style-type: none;
+    padding: 10px;
+    z-index: 1;
+
+
+}
+.down {
+    border: solid rgb(210, 210, 210);
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.dropdown:hover .dropdown-content{
+
+    visibility: visible;
+
+
+}
+.cover-image{
+
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    top: 6.5vh;
+    height: 600px;
+}
+.card-cv{
+
+    width: 90vh;
+    height: 25rem;
+    background-color: #cececebe;
+    position: relative;
+    border-radius: 15px;
+    top: 6vh;
+    left: 12vh;
+    padding: 2rem;
+    h1{
+        padding: 20px;
+    }
+    p{
+        padding: 20px;
+        font-size: larger;
+    }
+    button{
+        border: none;
+        background-color: rgb(255, 87, 3);
+        padding: 20px;
+        border-radius: 10px;
+    }
+    a{
+        color: white;
+        text-decoration: none;
+    }
+    .find-job{
+        color: rgb(0, 0, 183);
+        padding-left: 20px;
+    }
+}
+.features{
+
+   padding: 50px;
+   background-color: black;
+   color: #f9f9f9;
+   display: grid;
+   grid-template-columns: auto auto auto ;
+   gap: 300px;
+   text-align: center;
+   position: relative; 
+   top: 19vh;
+
+   img{
+        width: 150px;
+        padding: 20px;
+   }
+
+   h3{
+
+       padding: 20px; 
+   }
+
+}
