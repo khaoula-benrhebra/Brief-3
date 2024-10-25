@@ -8,7 +8,7 @@ body{
     min-height: 68rem;
     display: grid; 
     grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: 7rem 20rem 30rem 35rem 10rem;
+    grid-template-rows: 7rem 20rem 30rem 35rem auto;
     grid-template-areas: 
         "header header header header header header header header header header"
         "hero hero hero hero hero hero hero hero hero hero"
@@ -16,7 +16,7 @@ body{
         "all all all all all all all all all all"
         "foot foot foot foot foot foot foot foot foot foot";
 }
-.header{
+header{
     grid-area: header;
     display: flex;
      flex-direction: column;
@@ -26,22 +26,22 @@ body{
 }
 
 
-.logo-nav {
+.header-com .logo-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
     background-color: black;
-    width: 79rem;
+    width: 100%;
 }
-.logo img{
+.header-com .logo img{
         height: 35px;
  }  
- .auth-buttons{
+  .header-com .auth-buttons{
     display: flex;
     gap: 1rem;
  }    
-.auth-buttons .signup {
+.header-com .auth-buttons .signup {
         background-color: #FF5703;
         padding: 0.5rem 1rem;
         border-radius: 5px;
@@ -49,7 +49,7 @@ body{
         cursor: pointer; 
         
     }
-    .auth-buttons .login{
+    .header-com .auth-buttons .login{
 
         background-color:transparent;
         padding: 0.5rem 1rem;
@@ -58,13 +58,13 @@ body{
         border: 1px solid #fff;
         cursor: pointer;
     }
-    .auth-buttons a{
+    .header-com .auth-buttons a{
         text-decoration: none;
         color: #fff;
         font-weight: 500;
     }
 
-.nav-links {
+.header-com .nav-links {
     display: flex;
     gap: 2rem;
     padding: 1rem 7.5rem;
@@ -74,28 +74,28 @@ body{
     position: relative;
     z-index: 1;
 }
-.nav-links li {
+.header-com .nav-links li {
     position: relative;
     z-index: 1;
     
 }
-.nav-links li a{
+.header-com .nav-links li a{
     text-decoration: none;
     color: #fff;
     font-size: 0.9rem;
     padding-bottom: 0.3rem;
 }
-.nav-links li:hover{ 
+.header-com .nav-links li:hover{ 
 
     border-bottom:3px solid #fff;
 
 }
-.dropdown{
+.header-com .dropdown{
     display: inline-flex;
     align-items: center;
     
 }
-.down{
+.header-com .down{
     border: solid #fff;
     border-width: 0 2px 2px 0;
     display: inline-block;
@@ -104,11 +104,11 @@ body{
     margin-left: 5px;
    
 }
-.dropdown-content {
+.header-com .dropdown-content {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
+    background-color: #000000;
     min-width: 160px;
     box-shadow: 0px 2px 5px  rgba(0,0,0,0.2);
     visibility: hidden;
@@ -118,12 +118,12 @@ body{
 
 
 }
-.dropdown-content li{
+.header-com .dropdown-content li{
     display: block;
     padding: 0.5rem 1rem ;
     color: black;
 }
-.dropdown:hover .dropdown-content{
+.header-com .dropdown:hover .dropdown-content{
 
     visibility: visible;
 }
@@ -336,13 +336,6 @@ gap: 13px;
     left: -80px;
 }
   
-
-footer{
-    grid-area: foot;
-    background-color: rgb(45, 117, 117);
-    color: black;
-    
-}
 .sort{
     display: flex;
     gap:    58.5%;
@@ -356,19 +349,19 @@ footer{
 
 
 
-footer{
+.foot-comp{
         grid-area: foot;
         display: flex;
          flex-direction: column;
          background-color: #000;
     
 }
-footer {
+.foot-comp {
     background-color: #000;
     padding: 40px 20px;
 }
 
-.footer-container {
+.foot-comp .footer-container {
     display: flex;
     justify-content: space-between;
     max-width: 1200px;
@@ -376,13 +369,13 @@ footer {
     flex-wrap: wrap;
 }
 
-.property {
+.foot-comp .property {
     flex: 1;
     margin: 10px;
     min-width: 200px;
 }
 
-.property h2 {
+.foot-comp .property h2 {
     color: #c00000;
     font-size: 20px;
     margin-bottom: 10px;
@@ -391,38 +384,38 @@ footer {
     padding-bottom: 5px;
 }
 
-.property ul {
+.foot-comp .property ul {
     list-style: none;
 }
 
-.property ul li {
+.foot-comp .property ul li {
     margin: 8px 0;
 }
 
-.property ul li a {
+.foot-comp .property ul li a {
     color: #fff;
     text-decoration: none;
 }
 
-.property ul li a:hover {
+.foot-comp .property ul li a:hover {
     text-decoration: underline;
 }
 
-.contact-us h2 {
+.foot-comp .contact-us h2 {
     margin-bottom: 15px;
     color: white;
 }
 
-.social-icons {
+.foot-comp .social-icons {
     display: flex;
     list-style: none;
 }
 
-.social-icons li {
+.foot-comp .social-icons li {
     margin-right: 15px;
 }
 
-.social-icons li a img {
+.foot-comp .social-icons li a img {
     width: 25px;
     height: 25px;
 }
